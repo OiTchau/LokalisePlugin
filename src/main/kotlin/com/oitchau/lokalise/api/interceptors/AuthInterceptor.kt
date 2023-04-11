@@ -1,4 +1,4 @@
-package org.rnazarevych.lokalise.api.interceptors
+package com.oitchau.lokalise.api.interceptors
 
 import okhttp3.Interceptor
 import okhttp3.Response

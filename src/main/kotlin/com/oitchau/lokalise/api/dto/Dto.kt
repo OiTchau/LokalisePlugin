@@ -1,4 +1,4 @@
-package org.rnazarevych.lokalise.api.dto
+package com.oitchau.lokalise.api.dto
 
 import com.google.gson.annotations.SerializedName
 

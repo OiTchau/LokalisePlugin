@@ -1,4 +1,4 @@
-package org.rnazarevych.lokalise
+package com.oitchau.lokalise
 
 import org.w3c.dom.Document
 import org.w3c.dom.Node

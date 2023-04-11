@@ -1,12 +1,12 @@
-package org.rnazarevych.lokalise.tasks
+package com.oitchau.lokalise.tasks
 
 import org.gradle.api.DefaultTask
 import org.gradle.api.tasks.Input
 import org.gradle.api.tasks.TaskAction
-import org.rnazarevych.lokalise.ApiConfig
-import org.rnazarevych.lokalise.TranslationsUpdateConfig
-import org.rnazarevych.lokalise.api.Api
-import org.rnazarevych.lokalise.taskGroup
+import com.oitchau.lokalise.ApiConfig
+import com.oitchau.lokalise.TranslationsUpdateConfig
+import com.oitchau.lokalise.api.Api
+import com.oitchau.lokalise.taskGroup
 import java.io.File
 import java.lang.RuntimeException
 
