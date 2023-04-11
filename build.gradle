@@ -16,7 +16,7 @@ apply plugin: 'java-gradle-plugin'
 apply plugin: 'kotlin'
 
 // For publishToMavenLocal
-group = 'org.rnazarevych'
+group = 'com.github.oitchau'
 version = '1.0-SNAPSHOT'
 
 publishing {
@@ -28,7 +28,7 @@ publishing {
 gradlePlugin {
     plugins {
         create("LokalisePlugin") {
-            id = "org.rnazarevych.lokalise-plugin"
+            id = "com.github.oitchau.lokalise-plugin"
             implementationClass = "org.rnazarevych.lokalise.LokalisePlugin"
         }
     }
