@@ -1,14 +1,14 @@
-package org.rnazarevych.lokalise.api
+package com.oitchau.lokalise.api
 
 import com.google.gson.GsonBuilder
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.ResponseBody
 import okhttp3.logging.HttpLoggingInterceptor
-import org.rnazarevych.lokalise.LokalisePlugin
-import org.rnazarevych.lokalise.api.dto.TranslationsResponse
-import org.rnazarevych.lokalise.api.dto.UploadFileDto
-import org.rnazarevych.lokalise.api.interceptors.AuthInterceptor
+import com.oitchau.lokalise.LokalisePlugin
+import com.oitchau.lokalise.api.dto.TranslationsResponse
+import com.oitchau.lokalise.api.dto.UploadFileDto
+import com.oitchau.lokalise.api.interceptors.AuthInterceptor
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

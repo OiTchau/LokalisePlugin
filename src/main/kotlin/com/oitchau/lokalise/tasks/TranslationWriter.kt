@@ -1,7 +1,7 @@
-package org.rnazarevych.lokalise.tasks
+package com.oitchau.lokalise.tasks
 
-import org.rnazarevych.lokalise.api.dto.TranslationsResponse
-import org.rnazarevych.lokalise.removeEmptyNodes
+import com.oitchau.lokalise.api.dto.TranslationsResponse
+import com.oitchau.lokalise.removeEmptyNodes
 import org.w3c.dom.Element
 import java.io.File
 import java.time.LocalDateTime

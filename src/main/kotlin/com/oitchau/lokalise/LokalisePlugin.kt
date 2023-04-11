@@ -1,10 +1,10 @@
-package org.rnazarevych.lokalise
+package com.oitchau.lokalise
 
 import org.gradle.api.Action
 import org.gradle.api.Plugin
 import org.gradle.api.Project
-import org.rnazarevych.lokalise.tasks.DownloadProjectData
-import org.rnazarevych.lokalise.tasks.UploadStrings
+import com.oitchau.lokalise.tasks.DownloadProjectData
+import com.oitchau.lokalise.tasks.UploadStrings
 
 
 const val taskGroup = "lokalise"
