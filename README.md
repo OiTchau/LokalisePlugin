@@ -20,14 +20,14 @@ buildscript {
   
   dependencies {  
          .......
-         classpath 'com.github.OiTchau:LokalisePlugin:1.1.0' // latest version of plugin goes here
+         classpath 'com.github.oitchau:LokalisePlugin:1.1.0' // latest version of plugin goes here
   }  
 }
 ```
 And in your app module `build.gradle` add this:
 
 ```
-apply plugin: 'org.rnazarevych.lokalise-plugin' // apply plugin 
+apply plugin: 'com.github.oitchau.lokalise-plugin' // apply plugin 
 ......
 // and configure it
 lokalise {  
