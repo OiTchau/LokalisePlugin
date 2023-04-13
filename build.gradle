@@ -10,7 +10,6 @@ buildscript {
     }
 }
 
-apply plugin: 'groovy'
 apply plugin: 'maven-publish'
 apply plugin: 'java-gradle-plugin'
 apply plugin: 'kotlin'
@@ -40,10 +39,8 @@ repositories {
 
 dependencies {
     implementation gradleApi()
-    implementation localGroovy()
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-    implementation 'org.codehaus.groovy:groovy-all:2.4.15'
     implementation 'commons-io:commons-io:2.7'
     implementation 'commons-codec:commons-codec:1.14'
 
