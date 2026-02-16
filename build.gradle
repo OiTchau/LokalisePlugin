@@ -47,9 +47,9 @@ dependencies {
     implementation 'commons-codec:commons-codec:1.14'
 
     //Network
-    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
-    implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+    implementation 'com.squareup.retrofit2:retrofit:3.0.0'
+    implementation 'com.squareup.retrofit2:converter-gson:3.0.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.3.2'
 
 
     testImplementation 'junit:junit:4.12'
