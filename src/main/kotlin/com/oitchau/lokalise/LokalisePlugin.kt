@@ -22,12 +22,12 @@ class LokalisePlugin : Plugin<Project> {
         project.afterEvaluate {
 
             project.tasks.apply {
-                create("uploadStrings", UploadStrings::class.java) {
+                register("uploadStrings", UploadStrings::class.java) {
                     it.apiConfig = config.api
 //                    it.uploadEntries = config.stringsUploadConfig.uploadEntries
                     it.uploadEntries = config.uploadEntries
                 }
-                create("downloadTranslations", DownloadProjectData::class.java) {
+                register("downloadTranslations", DownloadProjectData::class.java) {
                     it.apiConfig = config.api
                     it.config = config.translationsUpdateConfig
                 }
