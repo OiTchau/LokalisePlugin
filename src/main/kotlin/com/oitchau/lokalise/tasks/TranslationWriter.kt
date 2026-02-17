@@ -14,7 +14,11 @@ import javax.xml.transform.stream.StreamResult
 
 internal class TranslationWriter {
 
-    private val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
+    companion object {
+        private const val PATTERN = "yyyy-MM-dd HH:mm:ss"
+    }
+
+    private fun formatter(): DateTimeFormatter = DateTimeFormatter.ofPattern(PATTERN)
 
     fun update(translationKeys: TranslationsResponse, lang: String, file: File) {
         println("Opening File ${file.absolutePath}")
@@ -49,16 +53,16 @@ internal class TranslationWriter {
             val translation = translationKey?.translations?.find { it.languageIso == lang }
             if (translation != null) {
                 val localLmd = try {
-                    LocalDateTime.parse(string.getAttribute("lmt"), formatter)
+                    LocalDateTime.parse(string.getAttribute("lmt"), formatter())
                 } catch (ignored: Exception) {
                     LocalDateTime.of(1970, 1, 1, 1, 1, 1)
                 }
-                val remoteLmd = LocalDateTime.parse(trimTimeZone(translation.modifiedAt), formatter)
+                val remoteLmd = LocalDateTime.parse(trimTimeZone(translation.modifiedAt), formatter())
 
                 // if there is newer text on the backend
                 if (remoteLmd.isAfter(localLmd)) {
                     string.textContent = escapeXml(translation.translation)
-                    string.setAttribute("lmd", remoteLmd.format(formatter))
+                    string.setAttribute("lmd", remoteLmd.format(formatter()))
                     updatedCount++
 //                    println("$id -> ${entry.translation}")
                 }
