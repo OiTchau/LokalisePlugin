@@ -1,0 +1,18 @@
+[versions]
+kotlin = "2.2.0"
+commonsIo = "2.7"
+commonsCodec = "1.14"
+retrofit = "3.0.0"
+okhttp = "5.3.2"
+junit = "4.12"
+
+[libraries]
+commons-io = { module = "commons-io:commons-io", version.ref = "commonsIo" }
+commons-codec = { module = "commons-codec:commons-codec", version.ref = "commonsCodec" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+okhttp-logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttp" }
+junit = { module = "junit:junit", version.ref = "junit" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
